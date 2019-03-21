@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width">
+<head>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="background">
+		<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT ME</a>
+	<a class="c" href="#">GALLERY</a>
+	<a class="d" href="#">CONTACT US</a>
+</div>
+	<div class="content">
+		<div class="home">
+			<h1 class="text1">I am Hadi Nasser</h1>
+			<h3 class="text2">Programmer</h3>
+		</div>
+		<div class="aboutme">
+			<div class="box">
+			<img src="images/me2.jpg" class="box-img" />
+			<h1>HadiNasser</h1>
+			<h5>Web Programmer - App Programmer</h5>
+			<p>You might not think that programmers are artists, but programming is an extremely creative profession. It's logic based creativity</p>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+			<div class="image">
+				<img src="images/pic.png" />
+			</div>
+
+		</div>
+		<div class="contactus">
+			<div class="contactform">
+				<form action="index.html" method="post">
+					<input type="text" name="" class="inputtext" placeholder="First Name">
+					<input type="text" name="" class="inputtext" placeholder="Last Name">
+					<input type="text" name="" class="inputtext" placeholder="Your Email">
+					<textarea cols="4" rows="6" class="inputmessage" placeholder="Your Message..."> </textarea>
+					<input type="button" name="" value="Submit" class="button">
+			</form>
+					<ul>
+						<li><a href="https://www.facebook.com/profile.php?id=100007525897366"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					</ul>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			var selected=$(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+	});
+
+	var $a=$('.a'),
+	$b=$('.b'),
+	$c=$('.c'),
+	$d=$('.d'),
+	$home=$('.home'),
+	$aboutme=$('.aboutme'),
+	$gallery=$('.gallery');
+	$contactus=$('.contactus');
+
+	$a.click(function(){
+		$home.fadeIn();
+		$aboutme.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+
+	$b.click(function(){
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$aboutme.fadeIn();
+		$contactus.fadeOut();
+	});
+
+
+	$c.click(function(){
+		$gallery.fadeIn();
+		$home.fadeOut();
+		$aboutme.fadeOut();
+		$contactus.fadeOut();
+	});
+
+	$d.click(function(){
+		$contactus.fadeIn();
+		$gallery.fadeOut();
+		$home.fadeOut();
+		$aboutme.fadeOut();
+	});
+
+
+
+</script>
+</body>
+</html>

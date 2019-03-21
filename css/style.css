@@ -1,0 +1,288 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+
+.background{
+	overflow-y: auto;
+
+}
+
+.nav{
+	width: 350px;
+	height: auto;
+	position: absolute;
+	top: 20%;
+	left: 0;
+
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: verdana;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px 0;
+	float: left;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+	opacity: 0.85;
+	border-radius: 13px;
+}
+
+
+a.active{
+	background-color: #3498db;
+	color: white;
+}
+
+.nav a:hover{
+	background-color: #3498db;
+	color: white;
+	width: 100%;
+	opacity: 1;
+}
+
+.a{
+	width: 95%;
+}
+
+.b{
+	width: 85%;
+}
+.c{
+	width: 80%;
+}
+
+.d{
+	width: 90%;
+}
+
+.content{
+	position: absolute;
+	width: 930px;
+	min-height: 500px;
+	height:auto;
+	right: 0;
+	top: 10%;
+
+}
+.home{
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	color: white;
+	font-family: verdana;
+	text-transform: uppercase;
+}
+.home h1{
+	display: block;
+}
+
+.text1{
+	color: white;
+	border-color:2px black;
+	font-size: 60px;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	padding-right: 120px;
+	border-top: 1px solid black;
+	opacity: 1;
+	border-bottom: 1px solid black;
+	position: relative; 
+	animation: text 3s 1;
+
+}
+
+.text2{
+	font-size: 30px;
+	opacity: 0.8;
+	color: black;
+	padding: 5px 0;
+}
+
+@keyframes text{
+	0%{
+		margin-bottom: -40px
+	}
+
+	30%{
+		letter-spacing: 10px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+
+
+.aboutme{
+position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display:none;
+}
+
+.aboutme p{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 15px;
+
+}
+
+.gallery{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+
+.gallery .image{
+	width: 29%;
+	margin: 2%;
+	float: left;
+}
+
+.image img{
+	width: 100%;
+	transition: all ease 0.5s;
+	transform: scale(1);
+}
+
+.image img:hover{
+	transform: scale(1.2);
+}
+
+.contactus{	
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+
+.inputtext{
+	width:55%;
+	height: 65px;
+	color: white;
+	border: 3px solid black;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	font-family: century gothic;
+	border-radius: 20px;
+}
+
+.inputmessage{
+	width:55%;
+	height: 135px;
+	color: white;
+	border: 3px solid black;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	font-family: century gothic;
+	float: left;
+	border-radius: 20px;
+}
+
+.button{
+	width: 160px;
+	height: 60px;
+	background-color: white;
+	color: black;
+	font-size: 28px;
+	font-family: century gothic;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	border: 1px solid black;
+	
+	border-radius: 20px;
+}
+
+.button:hover{
+	background-color: #3498db;
+	color: white;
+}
+
+ul{
+	
+
+	padding: 5px;
+}
+
+.contactus li{
+	display: inline-block;
+	list-style: none;
+	margin-top: 100px;
+	margin-right:25px; 
+	float: left;
+}
+
+.contactus li a{
+	color: white;
+	text-decoration: none;
+	font-size: 60px;
+	transition: all ease 0.5s;
+}
+
+.contactus li a:hover{
+	color: #b9b9b9;
+}
+
+.box{
+	width: 450px;
+	background:rgba(0,0,0,0.6);
+	padding: 40px;
+	text-align: center;
+	margin-right: 50px;
+	color: white;
+	font-family: Century gothic;
+
+}
+
+.box-img{
+	transition: all ease 0.5s;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+.box-img:hover{
+	transform: scale(1.2);
+}
+.box h1{
+	font-size: 40px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+
+.box h5{
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-weight: 100; 
+}
+
+.box p{
+	text-align: justify;
+
+}
